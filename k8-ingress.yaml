@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: sample-ingress
+  namespace: dept-1
+spec:
+  rules:
+  - host: ingress.example.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: sample-nodeport
+          servicePort: 80

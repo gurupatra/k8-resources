@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-pod
+  namespace: dept-1
+spec:
+  containers:
+  - image: ubuntu
+    name: ububtu-test
+
